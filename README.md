@@ -1,68 +1,111 @@
 # AI CV Template (LaTeX)
 
-A clean, modular LaTeX CV template for researchers, engineers, and technical professionals in AI, software, and academia. Based on the resume structure of [Andrew R. Garcia, Ph.D.](https://andrewgarcia.vercel.app/), this template is designed for flexibility and clarity — with separate files for each section.
+A clean, modular LaTeX CV template for researchers, engineers, developers, and academics working in AI, software, and computer science.  
+Based on the resume structure of [Andrew R. Garcia, Ph.D.](https://andrewgarcia.vercel.app/), this template is built for clarity, elegance, and customization — with all sections organized into modular files.
 
-## 🌟 Features
+---
 
-- Modular section files (`/sections`)
-- Clean layout with custom macros
-- Easy to customize with placeholders like `{{ YOUR NAME }}`
-- Supports links, awards, publications, conference talks, and projects
-- Great for technical and academic CVs
+## ✨ Features
+
+- Modular section files (`/sections`) for easy editing
+- Custom macros for headers and layout consistency
+- Supports experience, education, skills, awards, certs, and publications
+- Picture and no-picture variants available
+- Ideal for technical, academic, or industry CVs
+
+---
+
+## Preview
+
+### **Standard CV (no photo)**  
+> Branch: [`main`](https://github.com/andrewrgarcia/ai-cv-template/tree/main)
+
+![Standard CV](assets/preview.png)
+
+---
+
+### **CV with Photo**  
+> Branch: [`picture-cv`](https://github.com/andrewrgarcia/ai-cv-template/tree/picture-cv)
+
+![Photo CV](assets/picture-preview.png)
+
+> The `picture-cv` version includes a professional, racially-neutral cartoon-style photo placeholder, in a vintage yet confident tone. You can replace it with your own illustrated or formal photo.
+
+---
 
 ## 📁 Directory Structure
 
 ```
 ai-cv-template/
-├── main.tex                # Main document
-├── README.md               # You're here
-├── sections/               # Individual section .tex files
-│   ├── education.tex
-│   ├── experience.tex
-│   ├── skills.tex
-│   ├── publications.tex
-│   ├── conference.tex
-│   ├── academic.tex
-│   ├── certs.tex
-│   ├── projects.tex
-└── assets/
-    └── preview.png         # (Optional) Screenshot of the CV
+├── main.tex                # Main LaTeX file
+├── README.md               # This file
+├── assets/
+│   ├── preview.png         # Standard CV screenshot
+│   └── picture-preview.png # Photo CV screenshot
+└── sections/               # All modular content files
+    ├── education.tex
+    ├── experience.tex
+    ├── skills.tex
+    ├── publications.tex
+    ├── conference.tex
+    ├── academic.tex
+    ├── certs.tex
+    ├── projects.tex
 ```
+
+---
 
 ## 🚀 Quick Start
 
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ai-cv-template.git
+git clone https://github.com/andrewrgarcia/ai-cv-template.git
 cd ai-cv-template
 ```
 
+To use the photo version:
+
+```bash
+git checkout picture-cv
+```
+
+---
+
 ### 2. Customize
 
-Edit the placeholder fields like:
+Replace placeholder content in:
 
 ```latex
 \contact{{{ YOUR NAME }}}{{{ YOUR LOCATION }}}{{{ EMAIL • WEBSITE • LINKEDIN }}}
 ```
 
-Fill in content inside each `sections/*.tex` file.
+Edit content inside each section file under `/sections`.
+
+In the `picture-cv` branch, update the image file:
+```latex
+\includegraphics[width=0.12\textwidth]{assets/your-photo.png}
+```
+
+---
 
 ### 3. Compile
 
-Use your favorite LaTeX editor or run:
+With `pdflatex`:
 
 ```bash
 pdflatex main.tex
 ```
 
-Or if you prefer automatic dependency resolution:
+Or automatically with `latexmk`:
 
 ```bash
 latexmk -pdf main.tex
 ```
 
-> 💡 Tip: This template is tested with TeX Live and Overleaf.
+✅ Compatible with **TeX Live**, **Overleaf**, and local builds.
+
+---
 
 ## 📝 License
 
