@@ -1,6 +1,6 @@
 # AI CV Template (LaTeX)
 
-A clean, modular LaTeX CV template for researchers, engineers, developers, and academics working in AI, software, and computer science.  
+A clean, modular LaTeX CV template for researchers, engineers, developers, and academics.
 Based on the resume structure of [Andrew R. Garcia, Ph.D.](https://andrewgarcia.vercel.app/), this template is built for clarity, elegance, and customization — with all sections organized into modular files.
 
 ---
